@@ -21,7 +21,7 @@ class _SignInState extends State<SignIn> {
           Container(
             height: double.infinity,
             width: double.infinity,
-            child: Image.asset("assets/images/bg.jpeg", fit: BoxFit.cover,),),
+            child: Image.asset("assets/images/bg1.jpg", fit: BoxFit.cover,),),
           Padding(
             padding: const EdgeInsets.only(top: 150, left: 8, right: 8),
             child: Align(
@@ -42,7 +42,7 @@ class _SignInState extends State<SignIn> {
                         suffix: Icon(Icons.lock)),),
                   SizedBox(height: 25,),
                   ElevatedButton(style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all(Colors.blue)),
+                      backgroundColor: MaterialStateProperty.all(Colors.orange)),
                     onPressed: () async {
                       String uemail = txtemail.text;
                       String upass = txtpass.text;
@@ -69,7 +69,7 @@ class _SignInState extends State<SignIn> {
                       TextButton(onPressed: () {
                         Navigator.pushNamed(context, 'signup');
                       }, child: Text("Sign Up", style: TextStyle(
-                          color: Colors.white,
+                          color: Colors.green.shade900,
                           fontWeight: FontWeight.bold,
                           letterSpacing: 1),)),
                     ],

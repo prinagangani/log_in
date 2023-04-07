@@ -22,7 +22,7 @@ class _SignUpState extends State<SignUp> {
           Container(
             height: double.infinity,
             width: double.infinity,
-            child: Image.asset("assets/images/bg.jpeg",fit: BoxFit.cover,),),
+            child: Image.asset("assets/images/bg1.jpg",fit: BoxFit.cover,),),
           Padding(
             padding: const EdgeInsets.only(top: 150,left: 8,right: 8),
             child: Align(
@@ -34,7 +34,7 @@ class _SignUpState extends State<SignUp> {
                   SizedBox(height:15,),
                   TextField(controller: txtpass,decoration: InputDecoration(border:OutlineInputBorder(),focusedBorder: OutlineInputBorder(),hintText: "Password",suffix: Icon(Icons.lock)),),
                   SizedBox(height: 25,),
-                  ElevatedButton(style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Colors.blue)),onPressed: () {
+                  ElevatedButton(style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Colors.orangeAccent)),onPressed: () {
                     var email = txtemail.text;
                     var passw = txtpass.text;
                     Share shr = Share();
@@ -48,7 +48,7 @@ class _SignUpState extends State<SignUp> {
                       Text("Already have account ?",style: TextStyle(letterSpacing: 1,fontWeight: FontWeight.bold),),
                       TextButton(onPressed: () {
                         Navigator.pop(context,);
-                      }, child: Text("Sign In",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,letterSpacing: 1),)),
+                      }, child: Text("Sign In",style: TextStyle(color: Colors.green.shade900,fontWeight: FontWeight.bold,letterSpacing: 1),)),
                     ],
                   ),
                 ],

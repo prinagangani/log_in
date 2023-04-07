@@ -18,14 +18,14 @@ class _HomeViewState extends State<HomeView> {
             Container(
               height: double.infinity,
               width: double.infinity,
-              child: Image.asset("assets/images/bg.jpeg", fit: BoxFit.cover,),
+              child: Image.asset("assets/images/bg1.jpg", fit: BoxFit.cover,),
             ),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Center(child: Text("Welcome", style: TextStyle(fontSize: 35,
                     fontWeight: FontWeight.bold,
-                    color: Colors.white),)),
+                    color: Colors.green.shade900),)),
                 ElevatedButton(style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Colors.black12),
                 ),onPressed: () {
                   Share shr = Share();
